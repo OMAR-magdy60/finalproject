@@ -1,10 +1,12 @@
 <div class="container py-4">
 
   <h1 class="title text-center mb-4"> Smartphones Catalog</h1>
-
-  <div class="d-flex justify-content-center mb-4">
-    <button class="refresh-btn btn btn-success" (click)="getSmartphones()"><img src="assets/icon_app_applestore__chqzj9o87jxy_large.png" alt=""> Refresh List</button>
-  </div>
+<div class="d-flex justify-content-center mb-4">
+  <button class="refresh-btn btn btn-success" (click)="getSmartphones()">
+    <img src="assets/icon_app_applestore__chqzj9o87jxy_large.png" alt="">
+    Refresh List
+  </button>
+</div>
 
   <div *ngIf="loading" class="status text-center">Loading...</div>
   <div *ngIf="error" class="status error text-center">{{ error }}</div>
